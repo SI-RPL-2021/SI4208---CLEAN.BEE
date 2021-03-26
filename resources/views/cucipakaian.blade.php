@@ -34,7 +34,7 @@
     <body>
         <br><br>
         <div class="container">
-            <h2 align=center>Price List</h2>
+            <h2 align=center>Price List Layanan CUci Pakaian</h2>
             <p align=center>Pada layanan cuci pakaian, CleanBee berusaha memberi layanan yang terbaik untuk bajumu!</p>
             <table class="table table-hover">
                 <thead>
