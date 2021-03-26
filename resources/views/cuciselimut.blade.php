@@ -34,7 +34,7 @@
     <body>
         <br><br>
         <div class="container">
-            <h2 align=center>Price List</h2>
+            <h2 align=center>Price List Cuci Selimut CleanBee</h2>
             <p align=center>Pada layanan cuci selimut, CleanBee memberi harga terbaik untuk kamu!</p>
             <table class="table table-hover">
                 <thead>
