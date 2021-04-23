@@ -14,5 +14,33 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('welcome');
 });
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/profile', 'ProfileController@index')->name('profile');
+Route::put('/profile', 'ProfileController@update')->name('profile.update');
+
+Route::get('/grocery', 'GroceryController@index')->name('grocery');
+Route::post('/grocery', 'GroceryController@index');
+
+Route::get('/cuciselimut', function () {
+    return view('cuciselimut');
+})->name('cuciselimut');
+
+Route::get('/cucipakaian', function () {
+    return view('cucipakaian');
+})->name('cucipakaian');
+
+Route::get('/cucisepatu', function () {
+    return view('cucisepatu');
+})->name('cucisepatu');
+
+Route::get('/orderlist', function () {
+    return view('orderlist');
+})->name('orderlist');
+
+Route::get('/blank', function () {
+    return view('blank');
+})->name('blank');
