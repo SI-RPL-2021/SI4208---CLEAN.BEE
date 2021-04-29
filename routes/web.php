@@ -42,9 +42,9 @@ Route::get('/orderlist', function () {
     return view('orderlist');
 })->name('orderlist');
 
-Route::get('/blank', function () {
-    return view('blank');
-})->name('blank');
+Route::get('/help', function () {
+    return view('help');
+})->name('help');
 
 Route::get('account/password', 'Account\PasswordController@edit')->name('profile');
 Route::patch('account/password', 'Account\PasswordController@update')->name('profile');

@@ -35,8 +35,7 @@
                     <div class="card-profile-image mt-4" width="30" align=center>
                         <img src="{{ asset('img/sepatu.png') }}" class="rounded-circle" alt="user-image">
                         <h5 class="font-weight-bold">Cuci Sepatu</h5>
-                            <p>CleanBee merupakan sebuah platform untuk mempermudah layanan laundry segala jenis sepatu dan tentunya tidak akan merusak sepatumu.</p>
-
+                            <p>Jangan ragu kalau mau cuci sepatu di CleanBee karena kita bisa mencuci segala jenis sepatu mulai dari sneaker, kanvas, kulit dan lain-lain loh!</p>
                     </div>
                     
                 </div>
@@ -46,8 +45,7 @@
                     <div class="card-profile-image mt-4">
                         <img src="{{ asset('img/selimut.png') }}" class="rounded-circle" alt="user-image">
                         <h5 class="font-weight-bold">Cuci Selimut</h5>
-                            <p>CleanBee merupakan sebuah platform untuk mempermudah layanan laundry selimut dengan cara yang efektif dan waktu yang efisien.</p>
-
+                            <p>Walaupun namanya hanya cuci selimut, disini kamu juga bisa mencuci karpet dan seprei loh! Jadi jangan takut apabila, ada sprei dan karpetmu yang kotor :)</p>
                     </div>
                     
                   
@@ -58,8 +56,7 @@
                     <div class="card-profile-image mt-4">
                         <img src="{{ asset('img/pakaian.png') }}" class="rounded-circle" alt="user-image">
                         <h5 class="font-weight-bold">Cuci Pakaian</h5>
-                            <p>CleanBee merupakan sebuah platform untuk mempermudah layanan laundry dengan cara yang efektif dan waktu yang efisien.</p>
-
+                            <p>Kamu tentunya dapat mencuci pakaian dengan bersih dan aman. Layanan cuci pakaian akan dihitung kiloan jadi lebih hemat kan ?</p>
                     </div>
                 </div>
 
@@ -68,8 +65,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h5 class="font-weight-bold">Why CleanBee?</h5>
-                        <p>ajdnajsdnajdnak.</p>
-                        <p>Recommend to install this preset on a project that you are starting from scratch, otherwise your project's design might break.</p>
+                        <p>CleanBee memberikan kamu kemudahan dalam melakukan pemesanan.</p>
+                        <p>CleanBee memungkinkan kamu untuk dapat mengetahui sampai mana cucian Anda diproses melalui fitur status pencucian.</p>
                        
                     </div>
                 </div>
@@ -80,11 +77,7 @@
                     <div class="col-lg-12">
                         <h5 class="font-weight-bold">About Us</h5>
                         <p>CleanBee merupakan jasa laundry yang telah berdiri sejak 2020. CleanBee dapat membantu anda untuk mencuci sepatu, pakaian serta selimut anda dengan waktu yang cepat dan cara yang mudah.</p>
-                        <ul>
-                            <li><a href="#" target="_blank">Blablabla</a> - Blablabla</li>
-                            <li><a href="#" target="_blank">Blablabla</a> - Blablabla</li>
-                            <li><a href="#" target="_blank">Blablabla</a> - Blablabla</li>
-                        </ul>
+                        
                     </div>
                 </div>
 

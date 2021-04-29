@@ -108,8 +108,8 @@
         </li>
 
         <!-- Nav Item -->
-        <li class="nav-item {{ Nav::isRoute('blank') }}">
-            <a class="nav-link" href="{{ route('blank') }}">
+        <li class="nav-item {{ Nav::isRoute('help') }}">
+            <a class="nav-link" href="{{ route('help') }}">
                 <i class="fas fa-fw fa-question-circle"></i>
                 <span>{{ __('Help') }}</span>
             </a>
@@ -286,9 +286,9 @@
                                 <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                 {{ __('Settings') }}
                             </a>
-                            <a class="dropdown-item" href="{{ route('orderlist') }}">
+                            <a class="dropdown-item" href="{{ route('help') }}">
                                 <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                {{ __('Order List') }}
+                                {{ __('Help') }}
                             </a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
