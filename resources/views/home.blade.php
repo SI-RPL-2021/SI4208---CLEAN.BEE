@@ -49,8 +49,6 @@
 
                             <p>Walaupun namanya hanya cuci selimut, disini kamu juga bisa mencuci karpet dan seprei loh! Jadi jangan takut apabila, ada sprei dan karpetmu yang kotor :)</p>
 
-                            <p> Walaupun namanya hanya cuci selimut, disini kamu juga bisa mencuci karpet dan seprei loh! Jadi jangan takut apabila, ada sprei dan karpetmu yang kotor :)</p>
-
 
                     </div>
                     
