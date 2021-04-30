@@ -38,13 +38,15 @@ Route::get('/cucisepatu', function () {
     return view('cucisepatu');
 })->name('cucisepatu');
 
+Route::get('/blank', function () {
+    return view('blank');
+})->name('blank');
+
 Route::get('/orderlist', function () {
     return view('orderlist');
 })->name('orderlist');
 
-Route::get('/blank', function () {
-    return view('blank');
-})->name('blank');
+
 
 Route::get('account/password', 'Account\PasswordController@edit')->name('profile');
 Route::patch('account/password', 'Account\PasswordController@update')->name('profile');
