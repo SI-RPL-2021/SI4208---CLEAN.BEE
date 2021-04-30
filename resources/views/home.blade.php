@@ -36,6 +36,7 @@
                         <img src="{{ asset('img/sepatu.png') }}" class="rounded-circle" alt="user-image">
                         <h5 class="font-weight-bold">Cuci Sepatu</h5>
                             <p>Jangan ragu kalau mau cuci sepatu di CleanBee karena kita bisa mencuci segala jenis sepatu mulai dari sneaker, kanvas, kulit dan lain-lain loh!</p>
+
                     </div>
                     
                 </div>
@@ -45,7 +46,12 @@
                     <div class="card-profile-image mt-4">
                         <img src="{{ asset('img/selimut.png') }}" class="rounded-circle" alt="user-image">
                         <h5 class="font-weight-bold">Cuci Selimut</h5>
+
                             <p>Walaupun namanya hanya cuci selimut, disini kamu juga bisa mencuci karpet dan seprei loh! Jadi jangan takut apabila, ada sprei dan karpetmu yang kotor :)</p>
+
+                            <p> Walaupun namanya hanya cuci selimut, disini kamu juga bisa mencuci karpet dan seprei loh! Jadi jangan takut apabila, ada sprei dan karpetmu yang kotor :)</p>
+
+
                     </div>
                     
                   
@@ -57,6 +63,7 @@
                         <img src="{{ asset('img/pakaian.png') }}" class="rounded-circle" alt="user-image">
                         <h5 class="font-weight-bold">Cuci Pakaian</h5>
                             <p>Kamu tentunya dapat mencuci pakaian dengan bersih dan aman. Layanan cuci pakaian akan dihitung kiloan jadi lebih hemat kan ?</p>
+
                     </div>
                 </div>
 
