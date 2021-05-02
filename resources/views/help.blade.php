@@ -12,21 +12,21 @@
         <div class="row mt-3 mb-4">
             <div class="col-12 col-sm-4">
                 <div class="list-group">
-                                                    <a id="menu-0-0" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active" data-toggle="list" href="#list-0-0" role="tab">
-                                Hal-hal Umum<i class="fa fa-chevron-right"></i></a>
-                                                    <a id="menu-0-1" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " data-toggle="list" href="#list-0-1" role="tab">
-                                Pembatasan Tanggung Jawab<i class="fa fa-chevron-right"></i></a>
-                                                    <a id="menu-1-0" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " data-toggle="list" href="#list-1-0" role="tab">
-                                Tentang Clean.Bee<i class="fa fa-chevron-right"></i></a>
-                                                    <a id="menu-1-1" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " data-toggle="list" href="#list-1-1" role="tab">
-                                Tentang Clean.Bee Services<i class="fa fa-chevron-right"></i></a>
-                                                    <a id="menu-1-2" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " data-toggle="list" href="#list-1-2" role="tab">
-                                Tentang Clean.Bee Agent<i class="fa fa-chevron-right"></i></a>
-                                                    <a id="menu-2-0" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " data-toggle="list" href="#list-2-0" role="tab">
-                                Pesanan / Order<i class="fa fa-chevron-right"></i></a>
-                                                    <a id="menu-2-1" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " data-toggle="list" href="#list-2-1" role="tab">
-                                Akun / Account<i class="fa fa-chevron-right"></i></a>
-                                                            </div>
+                <a id="menu-0-0" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active" onClick="showFolder(0, 0)">
+                            Hal-hal Umum<i class="fa fa-chevron-right"></i></a>
+                                                <a id="menu-0-1" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " onClick="showFolder(0, 1)">
+                            Pembatasan Tanggung Jawab<i class="fa fa-chevron-right"></i></a>
+                                                <a id="menu-1-0" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " onClick="showFolder(1, 0)">
+                            Tentang Clean.Bee<i class="fa fa-chevron-right"></i></a>
+                                                <a id="menu-1-1" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " onClick="showFolder(1, 1)">
+                            Tentang Clean.Bee Services<i class="fa fa-chevron-right"></i></a>
+                                                <a id="menu-1-2" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " onClick="showFolder(1, 2)">
+                            Tentang Clean.Bee Agent<i class="fa fa-chevron-right"></i></a>
+                                                <a id="menu-2-0" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " onClick="showFolder(2, 0)">
+                            Pesanan / Order<i class="fa fa-chevron-right"></i></a>
+                                                <a id="menu-2-1" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " onClick="showFolder(2, 1)">
+                            Akun / Account<i class="fa fa-chevron-right"></i></a>
+                                                        </div>
             </div>
             <div class="col-12 col-sm-8 mt-3 mt-sm-0">
                                                             <div id="list-0-0" class="tab-pane fade show active">
@@ -261,6 +261,39 @@
 </section>
 
     <!-- End of Main Content -->
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover({
+                trigger: 'focus'
+            })
+            $('#openmodal_id').click(function () {
+                $('.menu_backdrop').show();
+            });
+        });
+
+        function showFolder(categoryKey, folderKey) {
+            $('[id^="menu-"]').removeClass('active');
+            $("#menu-" + categoryKey + '-' + folderKey).addClass('active');
+
+            $('[id^="list-"]').hide();
+            $('#list-' + categoryKey + '-' + folderKey).show().addClass('show active');
+        }
+    </script>
+
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover({
+            trigger: 'focus'
+        })
+        $('#openmodal_id').click(function () {
+            $('.menu_backdrop').show();
+        });
+
+        $('.select-lang').on('change', function() {
+            window.location = this.value;
+        });
+    });
+</script>
 @endsection
 
 @push('notif')
