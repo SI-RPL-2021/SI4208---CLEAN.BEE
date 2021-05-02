@@ -44,7 +44,7 @@
                                             <div class="card-body"><div rel="clipboard_data"><ol>
                                             <li>PT Clean.Bee adalah suatu perseroan yang didirikan berdasarkan hukum Negara Republik Indonesia ("<strong>kami</strong>" atau "<strong>milik kami</strong>").</li>
                                             <br>
-                                            <li>Web ini merupakan Web perangkat lunak yang berfungsi sebagai sarana untuk menemukan layanan dengan menggunakan layanan  yang disediakan oleh pihak ketiga (vendor) ("<strong>Penyedia(-penyedia) Layanan</strong>"). Web ini menawarkan informasi tentang layanan yang ditawarkan oleh Penyedia Layanan. Jenis layanan yang dapat diminta melalui Web adalah: :<ol><li>Cuci Pakaian</li><li>Cuci Selimut</li><li>Cuci Sepatu</li></ol></li></ol></div><p><br></p></div>
+                                            <li>Web ini digunakan untuk mewadahi pemesanan jasa cuci yang disediakan oleh clean bee. Web ini menawarkan informasi tentang layanan yang ditawarkan oleh Penyedia Layanan. Jenis layanan yang dapat diminta melalui Web adalah: :<ol><li>Cuci Pakaian</li><li>Cuci Selimut</li><li>Cuci Sepatu</li></ol></li></ol></div><p><br></p></div>
                                         </div>
                                     </div>
                                                             </div>
@@ -300,3 +300,4 @@
     </div>
 @endif
 @endpush
+
