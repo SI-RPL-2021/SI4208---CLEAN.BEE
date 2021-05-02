@@ -20,8 +20,6 @@
                             Tentang Clean.Bee<i class="fa fa-chevron-right"></i></a>
                                                 <a id="menu-1-1" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " onClick="showFolder(1, 1)">
                             Tentang Clean.Bee Services<i class="fa fa-chevron-right"></i></a>
-                                                <a id="menu-1-2" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " onClick="showFolder(1, 2)">
-                            Tentang Clean.Bee Agent<i class="fa fa-chevron-right"></i></a>
                                                 <a id="menu-2-0" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " onClick="showFolder(2, 0)">
                             Pesanan / Order<i class="fa fa-chevron-right"></i></a>
                                                 <a id="menu-2-1" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center " onClick="showFolder(2, 1)">
