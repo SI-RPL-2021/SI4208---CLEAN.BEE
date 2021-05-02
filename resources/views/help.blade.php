@@ -130,24 +130,7 @@
                                         </div>
                                     </div>
 
-                                                            </div>
-                        </div>
-                                            
-                                            <div id="list-1-2" class="tab-pane fade ">
-                            <div id="accordion" role="tablist">
-                                                                    <div class="card">
-                                        <div class="card-header" role="tab" id="headingOne">
-                                            <h5 class="mb-0">
-                                                <a data-toggle="collapse" href="#article_27000042226" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-                                                    Clean.Bee Agent
-                                                </a>
-                                            </h5>
-                                        </div>
-
-                                        <div id="article_27000042226" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                            <div class="card-body"><p style="">Fitur Agen adalah fitur yang dapat membuat Anda bisa mempunyai penghasilan tambahan. </p><p style="">- Setelah terdaftar menjadi Agen Clean.Bee akan mendapatkan kode khusus. </p><p>- Sebarkan kode khusus tersebut melalui SMS, Whatsapp, Email, dan media sosial di mana saja dan kapan saja.</p><p>- Saat kode dari Anda digunakan oleh rekan ketika pesan jasa Clean.Bee, Anda akan mendapatkan komisi 10% hingga Rp 30.000,-.</p><p><br></p></div>
-                                        </div>
-                                    </div>
+                                                            
                                                             </div>
                         </div>
                                                                                 <div id="list-2-0" class="tab-pane fade ">
@@ -162,7 +145,7 @@
                                         </div>
 
                                         <div id="article_27000041358" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                            <div class="card-body"><ul><li><p dir="ltr">Pilih layanan / <em>Choose service</em></p></li></ul><p>Pilih dengan mengklik layanan yang anda inginkan (layanan binatu, layanan pembersihan, layanan AC, layanan elektronik, tukang harian atau tukang ledeng)</p><p dir="ltr"><em>Choose by clicking one of our services (Laundry Service, Cleaning Service, AC Cleaning, Electronic service, Handyman or Plumbing)</em></p><ul><li dir="ltr"><p dir="ltr">Isi formulir / <em>Fill the forms</em></p></li></ul><p dir="ltr">Masukkan informasi sesuai dengan formulir seperti lokasi, waktu dan tanggal dan lain-lain.</p><p dir="ltr">Sebelum mengklik tombol “Pesan Sekarang”, mohon cek data yang anda masukkan telah sesuai.</p><p dir="ltr">Catatan : Clean.Bee akan membuat akun secara otomatis saat anda memesan layanan jika akun anda belum terdaftar. Detail akun akan dikirimkan melalui email.</p><p dir="ltr"><em>Please enter required information such as location, date and time etc. Before clicking the “Order Now”, please check your order details carefully. </em></p><p dir="ltr"><em>Note: Clean.Bee will automatically create an account if your email hasn’t yet registered. Account details will be sent via email.</em></p><ul><li dir="ltr"><p dir="ltr">Pesanan anda sudah terkirim / <em>Your order is already submitted</em></p></li></ul><p dir="ltr">Clean.Bee akan menginformasikan melalui email dan/atau sms terkait status pesanan anda.</p><p dir="ltr"><em>Clean.Bee will notify you via email and/or SMS about your order status.</em></p><p><br></p></div>
+                                            <div class="card-body"><ul><li><p dir="ltr">Pilih layanan / <em>Choose service</em></p></li></ul><p>Pilih dengan mengklik layanan yang anda inginkan (Layanan Cuci Pakaian, Layanan Cuci Sepatu, Layanan Cuci Selimut)</p><p dir="ltr"><em>Choose by clicking one of our services (Shirt Cleaning Service, Shoes Cleaning Service, Blanket Cleaning Service)</em></p><ul><li dir="ltr"><p dir="ltr">Isi formulir / <em>Fill the forms</em></p></li></ul><p dir="ltr">Masukkan informasi sesuai dengan formulir seperti lokasi, waktu dan tanggal dan lain-lain.</p><p dir="ltr">Sebelum mengklik tombol “Pesan Sekarang”, mohon cek data yang anda masukkan telah sesuai.</p><p dir="ltr">Catatan : Clean.Bee akan membuat akun secara otomatis saat anda memesan layanan jika akun anda belum terdaftar. Detail akun akan dikirimkan melalui email.</p><p dir="ltr"><em>Please enter required information such as location, date and time etc. Before clicking the “Order Now”, please check your order details carefully. </em></p><p dir="ltr"><em>Note: Clean.Bee will automatically create an account if your email hasn’t yet registered. Account details will be sent via email.</em></p><ul><li dir="ltr"><p dir="ltr">Pesanan anda sudah terkirim / <em>Your order is already submitted</em></p></li></ul><p dir="ltr">Clean.Bee akan menginformasikan melalui email dan/atau sms terkait status pesanan anda.</p><p dir="ltr"><em>Clean.Bee will notify you via email and/or SMS about your order status.</em></p><p><br></p></div>
                                         </div>
                                     </div>
                                                                     <div class="card">
@@ -268,20 +251,8 @@
         }
     </script>
 
-<script>
-    $(function () {
-        $('[data-toggle="popover"]').popover({
-            trigger: 'focus'
-        })
-        $('#openmodal_id').click(function () {
-            $('.menu_backdrop').show();
-        });
 
-        $('.select-lang').on('change', function() {
-            window.location = this.value;
-        });
-    });
-</script>
+
 @endsection
 
 @push('notif')
