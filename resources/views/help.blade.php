@@ -129,19 +129,6 @@
                                             <div class="card-body"><h3 dir="ltr"><strong>Cuci Sepatu</strong></h3><ul><li dir="ltr"><h4>Mencuci Sepatu dengan beberapa paket pilihan sesuai dengan tipe Sepatu seperti Sneaker, Kanvas, Suede, Kulit dan hybrid. Harga berdasarkan oleh Tipe Sepatu.</h4></li></ul></div>
                                         </div>
                                     </div>
-                                                                    <div class="card">
-                                        <div class="card-header" role="tab" id="headingOne">
-                                            <h5 class="mb-0">
-                                                <a data-toggle="collapse" href="#article_27000042222" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-                                                    Harian
-                                                </a>
-                                            </h5>
-                                        </div>
-
-                                        <div id="article_27000042222" class="collapse " role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                            <div class="card-body"><ul><li dir="ltr"><h4>=========================.</h4></li><li dir="ltr"><h4>============================================</h4></li><li dir="ltr"><h4>============================================</h4></li><li dir="ltr"><h4>============================================</h4></li><li dir="ltr"><h4>============================================</h4></li></ul></div>
-                                        </div>
-                                    </div>
 
                                                             </div>
                         </div>
@@ -261,6 +248,7 @@
 </section>
 
     <!-- End of Main Content -->
+    <!-- Script buat grouplist.accordion -->
     <script>
         $(function () {
             $('[data-toggle="popover"]').popover({
