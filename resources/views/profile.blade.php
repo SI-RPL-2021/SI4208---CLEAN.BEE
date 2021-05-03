@@ -50,12 +50,12 @@
             <div class="card-body">
                 @if(session('success'))
                 <div class="alert alert-success" role='alert'>
-                {{session('success')}}
+                    {{session('success')}}
                 </div>
                 @endif
 
                 <form method="POST" action="{{ route('profile') }}" autocomplete="off">
-                @method("PATCH")
+                    @method("PATCH")
 
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
@@ -94,13 +94,13 @@
                                 <div class="form-group focused">
                                     <label class="form-control-label" for="old_password">Current Password</label>
                                     <input type="password" id="old_password" class="form-control" placeholder="Current Passowrd" name="old_password">
-                                
+
                                 </div>
                             </div>
                             <div class="form-group focused">
                                 <label class="form-control-label" for="password">New Password</label>
                                 <input type="password" id="password" class="form-control" placeholder="New Password" name="password">
-                                
+
                             </div>
                         </div>
                     </div>
