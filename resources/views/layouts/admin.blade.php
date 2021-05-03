@@ -310,14 +310,7 @@
 
             </div>
             <!-- /.container-fluid -->
-
-        </div>
-        <!-- End of Main Content -->
-        
-    </div>
-    <!-- End of Content Wrapper -->
-    <!-- Footer -->
-    <footer class="sticky-footer bg-white">
+            <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
                     <span>Copyright &copy; CleanBee 2021</span>
@@ -325,6 +318,13 @@
             </div>
         </footer>
         <!-- End of Footer -->
+
+        </div>
+        <!-- End of Main Content -->
+        
+    </div>
+    <!-- End of Content Wrapper -->
+
 
 </div>
 
