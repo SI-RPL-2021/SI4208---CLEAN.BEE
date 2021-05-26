@@ -49,32 +49,11 @@ Route::get('/help', function () {
 Route::get('account/password', 'Account\PasswordController@edit')->name('profile');
 Route::patch('account/password', 'Account\PasswordController@update')->name('profile');
 
-// <?php
-// Route::get('/', function(){
-//     return View::make('profile');
-// });
-
-// Route::post('change', array(
-//     'as=>'change',
-//     function(){
-//         $newpassword = Input::get('password');
-//         $oldpassword = User::find(2) ->password;
-
-//         if(Hash::checks($newpassword, $oldpassword)){
-//             var_dump('password matches and allowed changes');
-
-//             $user =User::find(2);
-//             $user ->password = Hash::make(Input::get'newpassword'));
-//             $user->save();
-
-//             return 'password updated';
-//         }else{
-//             var_dump('old password unmatch');
-//         }
+Route::get('cuciselimut-form', 'CuciselimutController@index');
+Route::post('save', 'CuciselimutController@store');
 
 
-//     }
-// ));
-// ?>
+
+ ?>
 
 
