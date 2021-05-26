@@ -52,6 +52,8 @@ Route::patch('account/password', 'Account\PasswordController@update')->name('pro
 Route::get('cuciselimut-form', 'CuciselimutController@index');
 Route::post('save', 'CuciselimutController@store');
 
+Route::get('cucipakaian-form', 'CucipakaianController@index');
+Route::post('save', 'CucipakaianController@store');
 
 
  ?>

@@ -8,8 +8,14 @@
 
     <div class="col-lg-8">
 
-        <div class="card shadow mb-4">
-
+    <div class="card shadow mb-4">
+            @if($message = Session::get('success'))
+            <div class="alert alert-success alert-block">
+                <strong>{{$message}}</strong>
+            </div>
+            <br>
+            @endif
+             
             <div class="card-profile-image mt-4">
                 <img src="{{ asset('img/pakaian.png') }}" class="rounded-circle" alt="user-image">
             </div>
@@ -63,7 +69,10 @@
                         <div class="col-12 col-md-15"></div>
                         <div class="col-12 col-md-15"> <br><br><br>
                             <h2 align=center>Formulir Pemesanan</h2><br><br>
-                            <form class="was-validated" action="" method="post">
+
+                            <form class="cucipakaian" action="{{url('save')}}" method="post">
+                                @csrf
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <?php if (isset($error)) : ?>
                                     <p class="text-danger">The data is not completed!</p>
                                 <?php endif; ?>
