@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCucipakaiantTable extends Migration
+class CreateCucipakaiansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCucipakaiantTable extends Migration
      */
     public function up()
     {
-        Schema::create('cucipakaiant', function (Blueprint $table) {
+        Schema::create('cucipakaians', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nname');
             $table->string('nohp');
@@ -30,6 +30,6 @@ class CreateCucipakaiantTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cucipakaiant');
+        Schema::dropIfExists('cucipakaians');
     }
 }
