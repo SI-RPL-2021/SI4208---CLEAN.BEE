@@ -84,12 +84,18 @@
                             <h2 align=center>Formulir Pemesanan</h2><br><br>
 
 
-                            <form class="cuciselimut" action="{{url('save')}}" method="post">
+                            <form class="cuciselimut" action="{{route('post-cuciselimut')}}" method="post">
                                 @csrf
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <?php if (isset($error)) : ?>
                                     <p class="text-danger">The data is not completed!</p>
                                 <?php endif; ?>
+
+                                <div class="form-group">
+                                    <label for="user_id">User Id</label>
+                                    <input type="text" class="form-control" id="user_id" placeholder="Enter Your Name" name="user_id" value={{ Auth::user()->id }} readonly>
+                                    <small>Tidak perlu kamu ganti.</small>
+                                </div>
 
                                 <div class="form-group">
                                     <label for="name">Nama:</label>

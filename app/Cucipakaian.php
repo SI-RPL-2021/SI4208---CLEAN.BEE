@@ -9,7 +9,7 @@ class Cucipakaian extends Model
 
     
     protected $fillable = [
-        'nname', 'nohp', 'alamat', 'catatan',
+        'user_id','nname', 'nohp', 'alamat', 'catatan','status','rating',
     ];
 
     

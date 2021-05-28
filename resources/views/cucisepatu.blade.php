@@ -8,7 +8,7 @@
 
     <div class="col-lg-8">
 
-    <div class="card shadow mb-4">
+        <div class="card shadow mb-4">
             @if($message = Session::get('success'))
             <div class="alert alert-success alert-block">
                 <strong>{{$message}}</strong>
@@ -35,9 +35,9 @@
                     <h2 align=center>Price List Cuci Sepatu CleanBee</h2>
                     <p align=center>Pada layanan cuci sepatu, CleanBee berusaha memberi layanan yang terbaik untuk bajumu!</p>
                     <table class="table table-hover">
-                <thead>
-                    <tr>
-                         <th>Tipe</th>
+                        <thead>
+                            <tr>
+                                <th>Tipe</th>
                                 <th>Harga</th>
                             </tr>
                         </thead>
@@ -61,10 +61,10 @@
                             <tr>
                                 <td>Hybrid</td>
                                 <td>Rp75.000,-</td>
-                    </tr>
-                   
-                </tbody>
-            </table>
+                            </tr>
+
+                        </tbody>
+                    </table>
                 </div>
 
                 <div class="container">
@@ -74,12 +74,18 @@
                         <div class="col-12 col-md-15"> <br><br><br>
                             <h2 align=center>Formulir Pemesanan</h2><br><br>
 
-                            <form class="cucisepatu" action="{{url('save')}}" method="post">
+                            <form class="cucisepatu" action="{{route('post-cucisepatu')}}" method="post">
                                 @csrf
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <?php if (isset($error)) : ?>
                                     <p class="text-danger">The data is not completed!</p>
                                 <?php endif; ?>
+
+                                <div class="form-group">
+                                    <label for="user_id">User Id</label>
+                                    <input type="text" class="form-control" id="user_id" placeholder="Enter Your Name" name="user_id" value={{ Auth::user()->id }} readonly>
+                                    <small>Tidak perlu kamu ganti.</small>
+                                </div>
 
                                 <div class="form-group">
                                     <label for="name">Nama:</label>

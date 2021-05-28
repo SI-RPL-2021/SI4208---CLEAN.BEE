@@ -15,10 +15,13 @@ class CreateCucisepatusTable extends Migration
     {
         Schema::create('cucisepatus', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('user_id');
             $table->string('nname');
             $table->string('nohp');
             $table->text('alamat');
             $table->text('catatan');
+            $table->string('status')->nullable();
+            $table->integer('rating')->nullable();
             $table->timestamps();
         });
     }
