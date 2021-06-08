@@ -23,8 +23,14 @@
         <tbody>
             <?php
             $i = 0;
+            $i1 = 0;
+            $total = 0;
             ?>
             @foreach($cuciselimut as $cp)
+            <?php
+            $total += $cp->rating;
+            $i1 += 1;
+            ?>
             @if($cp -> user_id === Auth::user()->id)
             <tr>
                 <th scope="row">{{$i+=1}}</th>
@@ -70,7 +76,11 @@
             @endforeach
         </tbody>
     </table>
-
+    @if ($i1===0)
+            <p>Total Rate = {{$total}} of 5 </p>
+            @else 
+            <p>Total Rate = {{$total/$i1}} of 5 </p>
+            @endif
     <h4>Table Sepatu</h4>
     <table class="table">
         <thead>
@@ -87,8 +97,14 @@
         <tbody>
             <?php
             $i = 0;
+            $i1 = 0;
+            $total = 0;
             ?>
             @foreach($cucisepatu as $cp)
+            <?php
+            $total += $cp->rating;
+            $i1 += 1;
+            ?>
             @if($cp -> user_id === Auth::user()->id)
             <tr>
                 <th scope="row">{{$i+=1}}</th>
@@ -105,7 +121,7 @@
                     <form action="{{ route('rating') }}" method="get">
                         @csrf
                         <input type="hidden" value="{{ $cp->id }}" name="id">
-                        <input type="hidden" value="{{ 'cuciselimut' }}" name="type">
+                        <input type="hidden" value="{{ 'cucisepatu' }}" name="type">
                         <button class="btn btn-primary">Rate</button>
                     </form>
                 </td>
@@ -134,7 +150,11 @@
             @endforeach
         </tbody>
     </table>
-
+    @if ($i1===0)
+            <p>Total Rate = {{$total}} of 5 </p>
+            @else 
+            <p>Total Rate = {{$total/$i1}} of 5 </p>
+            @endif
     <h4>Table Pakaian</h4>
     <table class="table">
         <thead>
@@ -151,8 +171,14 @@
         <tbody>
             <?php
             $i = 0;
+            $i1 = 0;
+            $total = 0;
             ?>
             @foreach($cucipakaian as $cp)
+            <?php
+            $total += $cp->rating;
+            $i1 += 1;
+            ?>
             @if($cp -> user_id === Auth::user()->id)
             <tr>
                 <th scope="row">{{$i+=1}}</th>
@@ -169,7 +195,7 @@
                     <form action="{{ route('rating') }}" method="get">
                         @csrf
                         <input type="hidden" value="{{ $cp->id }}" name="id">
-                        <input type="hidden" value="{{ 'cuciselimut' }}" name="type">
+                        <input type="hidden" value="{{ 'cucipakaian' }}" name="type">
                         <button class="btn btn-primary">Rate</button>
                     </form>
                 </td>
@@ -198,7 +224,11 @@
             @endforeach
         </tbody>
     </table>
-
+    @if ($i1===0)
+            <p>Total Rate = {{$total}} of 5 </p>
+            @else 
+            <p>Total Rate = {{$total/$i1}} of 5 </p>
+            @endif
     <form action="{{route('feedback_process')}}" method="post">
         @csrf
         <h4>Feedback</h4>
@@ -210,7 +240,7 @@
         <button class="btn btn-primary">Submit</button>
     </form>
     <br>
-    <p>Layanan Pengaduan : <a class="mb-4" href="https://wa.me/6281234567890">Click Disini</a></p>
+    <p>Layanan Pengaduan : <a class="mb-4" href="https://wa.me/6281234567890">Klik Disini</a></p>
 </div>
 <!-- End of Main Content -->
 @endsection

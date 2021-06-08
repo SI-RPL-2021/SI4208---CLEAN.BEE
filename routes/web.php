@@ -60,11 +60,11 @@ Route::get('/rating', function (Request $request) {
     if ($type === 'cuciselimut') {
         $data = cuciselimut::find($request->id);
         return view('rating', compact('data', 'type', 'id'));
-    } elseif ($type === 'cucissepatu') {
-        $data = cuciselimut::find($request->id);
+    } elseif ($type === 'cucisepatu') {
+        $data = cucisepatu::find($request->id);
         return view('rating', compact('data', 'type', 'id'));
     } elseif ($type === 'cucipakaian') {
-        $data = cuciselimut::find($request->id);
+        $data = cucipakaian::find($request->id);
         return view('rating', compact('data', 'type', 'id'));
     }
 })->name('rating');
@@ -75,12 +75,12 @@ Route::post('/rating', function (Request $request) {
         $data = cuciselimut::find($request->id);
         $data->rating = $request->rating;
         $data->save();
-    } elseif ($type === 'cucissepatu') {
-        $data = cuciselimut::find($request->id);
+    } elseif ($type === 'cucisepatu') {
+        $data = cucisepatu::find($request->id);
         $data->rating = $request->rating;
         $data->save();
     } elseif ($type === 'cucipakaian') {
-        $data = cuciselimut::find($request->id);
+        $data = cucipakaian::find($request->id);
         $data->rating = $request->rating;
         $data->save();
     }
