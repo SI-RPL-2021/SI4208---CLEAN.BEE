@@ -140,4 +140,4 @@ Route::post('orderlistAdminPakaian', [App\Http\Controllers\HomeController::class
 Route::post('orderlistAdminSelimut', [App\Http\Controllers\HomeController::class, 'status_processSelimut'])->name('trackingSelimut')->middleware('is_admin');
 Route::post('orderlistAdminSepatu', [App\Http\Controllers\HomeController::class, 'status_processSepatu'])->name('trackingSepatu')->middleware('is_admin');
 
-Route::get('admin/dashboard', [DashboardController::class, 'index','sepatu'])->name('admin.dashboard')->middleware('is_admin');
+Route::get('admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard')->middleware('is_admin');

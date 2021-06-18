@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function index (){
-        $pakaian = DB::select("SELECT COUNT(*) as baju from cucipakaians");
         $selimut = DB::select("SELECT COUNT(*) as selimut from cuciselimuts");
+        $pakaian = DB::select("SELECT COUNT(*) as baju from cucipakaians");
+        $sepatu = DB::select("SELECT COUNT(*) as sepatu from cucisepatus");
         
-        return view ('adminDashboard',['pakaian'=>$pakaian],['selimut'=>$selimut]);
+        
+       
+        return view ('adminDashboard',['pakaian'=>$pakaian],['selimut'=>$selimut],['sepatu'=>$sepatu]);
     }
 
-    public function sepatu(){
-        $sepatu = DB::select("SELECT COUNT(*) as sepatu from cucisepatus");
-        return view ('adminDashboard',['sepatu'=>$sepatu]);
-    }
+    
 }
