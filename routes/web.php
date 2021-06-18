@@ -146,3 +146,6 @@ Route::get('admin/dashboard', [DashboardController::class, 'index'])->name('admi
 Route::get('admin/dashboard', [DashboardController::class, 'index','sepatu'])->name('admin.dashboard')->middleware('is_admin');
 
 
+Route::get('/adminDashboard', function () {
+    return view('adminDashboard');
+})->name('adminDashboard');

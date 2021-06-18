@@ -76,6 +76,14 @@
                 </a>
             </li>
 
+             <!-- Nav Item -->
+             <li class="nav-item {{ Nav::isRoute('adminDashboard') }}">
+                <a class="nav-link" href="{{ route('adminDashboard') }}">
+                    <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                    <span>{{ __('Dashboard') }}</span>
+                </a>
+            </li>
+
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
