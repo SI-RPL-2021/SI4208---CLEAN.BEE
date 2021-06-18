@@ -11,9 +11,7 @@ class DashboardController extends Controller
         $pakaian = DB::select("SELECT COUNT(*) as baju from cucipakaians");
         $sepatu = DB::select("SELECT COUNT(*) as sepatu from cucisepatus");
         
-        
-       
-        return view ('adminDashboard',['pakaian'=>$pakaian],['selimut'=>$selimut],['sepatu'=>$sepatu]);
+        return view('adminDashboard', ['selimut'=>$selimut],['pakaian'=>$pakaian],['sepatu'=>$sepatu]);
     }
 
     

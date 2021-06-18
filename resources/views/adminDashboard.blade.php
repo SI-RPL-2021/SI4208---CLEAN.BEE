@@ -15,17 +15,14 @@
 
     @foreach ($selimut as $key =>$data)
         {{$jumlah1 = $data->selimut}}
-        
     @endforeach
 
     @foreach ($pakaian as $key =>$data)
         {{$jumlah2 = $data->baju}}
-
     @endforeach
 
     @foreach ($sepatu as $key =>$data)
         {{$jumlah3 = $data->sepatu}}
-
     @endforeach
 
     <div id = "chart1"></div>
