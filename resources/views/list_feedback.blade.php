@@ -2,10 +2,9 @@
 
 @section('main-content')
 <!-- Page Heading -->
-<h1 class="h3 mb-4 text-gray-800 text-center">{{ __('Order List') }}</h1>
+<h1 class="h3 mb-4 text-gray-800 text-center">{{ __('Feedback List') }}</h1>
 
 <!-- Main Content goes here -->
-<h4>Table Selimut</h4>
 <table class="table">
     <thead>
         <tr>
