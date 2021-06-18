@@ -141,13 +141,11 @@ Route::post('orderlistAdminSelimut', [App\Http\Controllers\HomeController::class
 Route::post('orderlistAdminSepatu', [App\Http\Controllers\HomeController::class, 'status_processSepatu'])->name('trackingSepatu')->middleware('is_admin');
 
 
-// Route::get('admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard')->middleware('is_admin');
+Route::get('admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard')->middleware('is_admin');
 
-// Route::get('admin/dashboard', [DashboardController::class, 'index','sepatu'])->name('admin.dashboard')->middleware('is_admin');
+Route::get('admin/dashboard', [DashboardController::class, 'index','sepatu'])->name('admin.dashboard')->middleware('is_admin');
 
 
-// Route::get('/adminDashboard', function () {
-//     return view('adminDashboard');
-// })->name('adminDashboard');
-
-Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard');
+Route::get('/adminDashboard', function () {
+    return view('adminDashboard');
+})->name('adminDashboard');
